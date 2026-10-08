@@ -21,7 +21,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section ref={ref} className="relative h-screen min-h-[700px] overflow-hidden bg-charcoal">
+    <section ref={ref} className="relative h-[110vh] min-h-[880px] overflow-hidden bg-charcoal">
       <motion.div className="absolute inset-0" style={{ y }}>
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'1\'/%3E%3C/svg%3E")' }} />
       </motion.div>
 
-      <motion.div className="relative z-10 h-full flex flex-col justify-center px-6 lg:px-12 max-w-7xl mx-auto pt-28 lg:pt-32" style={{ opacity }}>
+      <motion.div className="relative z-10 h-full flex flex-col justify-center px-6 lg:px-12 max-w-7xl mx-auto pt-28 lg:pt-32 pb-16" style={{ opacity }}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
